@@ -1,10 +1,5 @@
-import { Text } from '@/common/components/Text';
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <div>
-      <h1 className="text-deep-red">Hello World</h1>
-      <Text color="pink">Hello World</Text>
-    </div>
-  );
+  redirect('/ticket');
 }
