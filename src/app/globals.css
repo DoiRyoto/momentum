@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-*: initial;
+  
+  /* ライト色変数 */
+  --color-blue: hsl(210, 35%, 75%);
+  --color-green: hsl(140, 30%, 75%);
+  --color-red: hsl(0, 35%, 75%);
+  --color-yellow: hsl(45, 40%, 75%);
+  --color-purple: hsl(270, 35%, 75%);
+  --color-orange: hsl(25, 40%, 75%);
+  --color-pink: hsl(330, 30%, 75%);
+  --color-teal: hsl(180, 30%, 75%);
+  --color-indigo: hsl(240, 35%, 75%);
+  --color-gray: hsl(200, 15%, 75%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-black: hsl(0, 0%, 0%);
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* 濃い色変数 */ 
+  --color-deep-blue: hsl(210, 35%, 25%);
+  --color-deep-green: hsl(140, 30%, 25%);
+  --color-deep-red: hsl(0, 35%, 25%);
+  --color-deep-yellow: hsl(45, 40%, 25%);
+  --color-deep-purple: hsl(270, 35%, 25%);
+  --color-deep-orange: hsl(25, 40%, 25%);
+  --color-deep-pink: hsl(330, 30%, 25%);
+  --color-deep-teal: hsl(180, 30%, 25%);
+  --color-deep-indigo: hsl(240, 35%, 25%);
+  --color-deep-gray: hsl(200, 15%, 25%);
 }

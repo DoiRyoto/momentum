@@ -1,1 +1,0 @@
-export type { Article } from '@/common/types/article'
